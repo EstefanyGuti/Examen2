@@ -37,27 +37,34 @@
     </div>
     <div>
         <div>
-            <img src="encuesta.jpg" alt="portada" width="200" />
+            <img src="descargar.png" alt="portada" width="200" />
         </div>
         <div>
+            # Encuesta
+            <asp:TextBox ID="Tnumeroencuesta" runat="server"></asp:TextBox>
+            <br />
             Nombre
+            <!-- HTML -->
             <asp:TextBox ID="Tnom" runat="server"></asp:TextBox>
             Apellido
             <asp:TextBox ID="Tape" runat="server"></asp:TextBox>
-            Fecha Nacmiento
-            <asp:TextBox ID="Tfena" runat="server"></asp:TextBox>
+            Fecha Nacimiento
+            <asp:TextBox ID="Tfena" runat="server" TextMode="Date"></asp:TextBox>
             Edad
-            <asp:TextBox ID="Tedad" runat="server"></asp:TextBox>
+            <asp:TextBox ID="Tedad" runat="server" TextMode="Number"></asp:TextBox>
             <br />
-            Correo electronico
-            <asp:TextBox ID="Temail" runat="server"></asp:TextBox>
+            Correo electrónico
+            <asp:TextBox ID="Temail" runat="server" TextMode="Email"></asp:TextBox>
             <br />
-            Posee carro propio?
-            <asp:RadioButton ID="Rsi" runat="server" Text="Sí" /> 
-            <asp:RadioButton ID="Rno" runat="server" Text="No" />
-        </div>
-        <div>
-            <asp:Button ID="Breg" runat="server" Text="Registrar" />
+
+            <label for="carropropio">¿Posee carro propio?</label>
+            <select id="carropropio" name="carropropio" runat="server" required>
+                <option value="1">Sí</option>
+                <option value="0">No</option>
+            </select>
+
+            <asp:Button ID="Breg" CssClass="button button" runat="server" Text="Registrar" OnClick="Button1_Click" />
+            <asp:Label ID="lblMensaje" runat="server" Text="" Visible="false"></asp:Label>
 
         </div>
     </div>

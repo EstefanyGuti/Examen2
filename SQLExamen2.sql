@@ -8,7 +8,7 @@ create table encuestas
  fechanacimiento date default '1993-01-01',
  edad  int not null,
  correoelectronico varchar  (50) unique,
- carropropio varchar (3) check (carropropio in ('Si','No'))
+ carropropio varchar (2) check (carropropio in ('Si','No'))
 )
 
 --Modificar datos

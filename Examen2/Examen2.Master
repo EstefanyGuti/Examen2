@@ -20,7 +20,7 @@
             <div>
                 <ul>
                     <li><a class="active" href="inicio,aspx">Inicio</a></li>
-                   
+                    <li><a class="active" href="reporte,aspx">Reporte</a></li>
                     <li><a href="#about">Salir</a></li>
                 </ul>
 
