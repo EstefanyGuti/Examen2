@@ -1,0 +1,33 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Examen2.master.cs" Inherits="Examen2.Examen2" %>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <link href="css/menu.css" rel="stylesheet" />
+    <link href="css/botones.css" rel="stylesheet" />
+    <title>Encuesta</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            <h1>
+                Encuestas Guti 2024
+            </h1>
+            <div>
+                <ul>
+                    <li><a class="active" href="inicio,aspx">Inicio</a></li>
+                    <li><a class="active" href="reporte,aspx">Reporte</a></li>
+                    <li><a href="#about">Salir</a></li>
+                </ul>
+
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>
